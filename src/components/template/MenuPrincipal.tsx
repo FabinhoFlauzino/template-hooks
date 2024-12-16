@@ -1,4 +1,4 @@
-import { IconMenu, IconNumbers, IconX } from "@tabler/icons-react";
+import { IconMenu, IconNumbers, IconUsers, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
@@ -13,11 +13,17 @@ export default function MenuPrincipal() {
             aberta: true,
             itens: [
                 {
-                    titulo:"Contador", 
+                    titulo: "Contador",
                     url: "/essenciais/contador",
                     tag: "useState",
                     icone: <IconNumbers />
-                }
+                },
+                {
+                    titulo: "Votação",
+                    url: "/essenciais/votacao",
+                    tag: "useState",
+                    icone: <IconUsers />
+                },
             ],
         },
     ];
