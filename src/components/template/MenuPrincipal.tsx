@@ -1,4 +1,4 @@
-import { IconArrowsLeftRight, IconLetterCase, IconMathGreater, IconNumbers, IconUsers } from "@tabler/icons-react";
+import { IconArrowsLeftRight, IconLetterCase, IconMathGreater, IconNumbers, IconRefreshAlert, IconSection, IconUsers } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
@@ -37,9 +37,27 @@ export default function MenuPrincipal() {
                     icone: <IconMathGreater />
                 },
                 {
-                    titulo: "Contagem de Caracteres",
+                    titulo: "Contagem de Caracteres (Effect)",
                     url: "/essenciais/contagemCaracteresEffect",
                     tag: "useEffect",
+                    icone: <IconLetterCase />
+                },
+                {
+                    titulo: "State VS Referência",
+                    url: "/essenciais/stateVsRef",
+                    tag: "useRef",
+                    icone: <IconRefreshAlert />
+                },
+                {
+                    titulo: "Referenciando Elemento",
+                    url: "/essenciais/refElemento",
+                    tag: "useRef",
+                    icone: <IconSection />
+                },
+                {
+                    titulo: "Contagem de Caracteres (Ref)",
+                    url: "/essenciais/contagemCaracteresRef",
+                    tag: "useRef",
                     icone: <IconLetterCase />
                 },
             ],
