@@ -1,4 +1,4 @@
-import { IconArrowsLeftRight, IconLetterCase, IconMathGreater, IconNumbers, IconRefreshAlert, IconSection, IconUsers } from "@tabler/icons-react";
+import { IconAppWindow, IconArrowsLeftRight, IconLetterCase, IconMathGreater, IconNumbers, IconRefreshAlert, IconSection, IconUsers } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
@@ -10,7 +10,7 @@ export default function MenuPrincipal() {
     const secoes = [
         {
             titulo: "Essenciais",
-            aberta: true,
+            aberta: false,
             itens: [
                 {
                     titulo: "Contador",
@@ -59,6 +59,18 @@ export default function MenuPrincipal() {
                     url: "/essenciais/contagemCaracteresRef",
                     tag: "useRef",
                     icone: <IconLetterCase />
+                },
+            ],
+        },
+        {
+            titulo: "Personalizados",
+            aberta: true,
+            itens: [
+                {
+                    titulo: "Modal",
+                    url: "/personalizados/modal",
+                    tag: "personalizados",
+                    icone: <IconAppWindow />
                 },
             ],
         },
