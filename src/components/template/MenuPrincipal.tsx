@@ -1,4 +1,4 @@
-import { IconAppWindow, IconArrowsLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconRefreshAlert, IconSection, IconUsers, IconX } from "@tabler/icons-react";
+import { IconAppWindow, IconArrowsLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconRefreshAlert, IconSection, IconShoppingCart, IconUsers, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
@@ -67,7 +67,7 @@ export default function MenuPrincipal() {
         },
         {
             titulo: "Personalizados",
-            aberta: true,
+            aberta: false,
             itens: [
                 {
                     titulo: "Modal",
@@ -86,6 +86,18 @@ export default function MenuPrincipal() {
                     url: "/personalizados/senha",
                     tag: "personalizados",
                     icone: <IconLock />
+                },
+            ],
+        },
+        {
+            titulo: "Contexto",
+            aberta: true,
+            itens: [
+                {
+                    titulo: "Loja",
+                    url: "/contexto/loja",
+                    tag: "useContext",
+                    icone: <IconShoppingCart />
                 },
             ],
         },
