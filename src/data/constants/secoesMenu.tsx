@@ -1,4 +1,4 @@
-import { IconAppWindow, IconArrowsLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconNumbers, IconRefreshAlert, IconSection, IconShoppingCart, IconUsers } from "@tabler/icons-react";
+import { IconAppWindow, IconArrowsLeftRight, IconColorSwatch, IconDatabase, IconDatabaseImport, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconNumbers, IconPin, IconRefreshAlert, IconSection, IconShoppingCart, IconTextColor, IconUsers } from "@tabler/icons-react";
 
 export const secoes = [
   {
@@ -88,6 +88,48 @@ export const secoes = [
         url: "/contexto/loja",
         tag: "useContext",
         icone: <IconShoppingCart />
+      },
+    ],
+  },
+  {
+    titulo: "Outros",
+    aberta: false,
+    itens: [
+      {
+        titulo: "Memoizando elementos",
+        url: "/outros/memoizacao",
+        tag: "useMemo",
+        icone: <IconPin />
+      },
+      {
+        titulo: "Memoizando funções",
+        url: "/outros/memoizandoFuncoes",
+        tag: "useCallback",
+        icone: <IconPin />
+      },
+      {
+        titulo: "Texto Secreto",
+        url: "/outros/texto",
+        tag: "useLayoutEffect",
+        icone: <IconTextColor />
+      },
+      {
+        titulo: "Gerador de cor",
+        url: "/outros/geradorCor",
+        tag: "useLayoutEffect",
+        icone: <IconColorSwatch />
+      },
+      {
+        titulo: "Soma com useState",
+        url: "/outros/somaState",
+        tag: "useState",
+        icone: <IconDatabase />
+      },
+      {
+        titulo: "Soma com useReducer",
+        url: "/outros/somaReducer",
+        tag: "useReducer",
+        icone: <IconDatabaseImport />
       },
     ],
   },
